@@ -1,0 +1,38 @@
+Git云协作步骤：
+
+1、初始化本地工作空间
+	git init
+2、获取源码：							
+	git clone git@github.com:fengjunhuii/makerunotes.git
+	git clone git@github.com:duyuhang6947/19031dyh.git
+3、修改工作空间文件
+	cd repositoryname
+	vi  test.c  写自己的文件
+4、添加到本地索引
+	git add .   (添加当前目录下所有文件)
+	git add filename  （添加指定文件)
+5、提交代码到本地仓库
+	git commit -m "修改的文件信息--随便写"
+6、推送到远程：
+	git push  origin master
+	git push  origin 分支名字（master  ---features_x 自己命名）
+
+
+分支操作：	
+	1、创建分支：							
+		git branch  develop(分支的名字)						
+	2、查询分支：							
+		git branch						
+	3、切换分支：							
+		git checkout  分支名称(master 等等)	
+		
+	4、添加到本地索引
+		git add。（添加当前目录下所有文件。
+		git add filename（添加指定文件）
+	5、提交代码到本地仓库
+		git commit -m "修改的文件信息--随便写"
+	6、推送到远程：
+		git push  origin 分支名字（master  ---features_x 自己命名）
+
+拉取远程的代码-同步更新本地：
+	git pull 
